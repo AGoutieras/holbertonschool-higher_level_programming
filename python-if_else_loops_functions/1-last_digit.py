@@ -9,7 +9,7 @@ if last > 5:
     msg = "and is greater than 5"
 
 elif last == 0:
-    msg = "and is zero"
+    msg = "and is 0"
 
 else:
     msg = "and is less than 6 and not 0"
