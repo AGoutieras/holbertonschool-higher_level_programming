@@ -125,7 +125,12 @@
     <summary>Show answer</summary>
 
     ```bash
-
+    #!/usr/bin/python3
+    for number in range(0, 100):
+    if number == 99:
+        print("{}".format(number))
+    else:
+        print("{:02}".format(number), end=", ")
     ```
 ---
 [6. Inventing is a combination of brains and materials. The more brains you use, the less material you need
@@ -145,7 +150,13 @@
     <summary>Show answer</summary>
 
     ```bash
-
+    #!/usr/bin/python3
+    for digit1 in range(0, 10):
+    for digit2 in range(digit1 + 1, 10):
+        if digit1 == 8 and digit2 == 9:
+            print("{}{}".format(digit1, digit2))
+        else:
+            print("{}{}".format(digit1, digit2), end=", ")
     ```
 ---
 [7. islower](7-islower.py): Write a function that checks for lowercase character.
@@ -162,7 +173,12 @@
     <summary>Show answer</summary>
      
     ```bash
-     
+    #!/usr/bin/python3
+    def islower(c):
+    if ord(c) in range(97, 123):
+        return True
+    else:
+        return False
     ```
 ---
 [8. To uppercase](8-uppercase.py): Write a function that prints a string in uppercase followed by a new line.
@@ -179,7 +195,13 @@
     <summary>Show answer</summary>
     
      ```bash
-
+    #!/usr/bin/python3
+    def uppercase(str):
+    for c in str:
+        if ord(c) >= 97 and ord(c) <= 122:
+            c = chr(ord(c) - 32)
+        print("{}".format(c), end="")
+    print("")
      ```
 ---
 [9. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important](9-print_last_digit.py): Write a function that prints the last digit of a number.
@@ -193,7 +215,10 @@
     <summary>Show answer</summary>
     
      ```bash
-
+    #!/usr/bin/python3
+    def print_last_digit(number):
+    print(abs(number) % 10, end="")
+    return abs(number) % 10
      ```
 ---
 [10. a + b](10-add.py): Write a function that adds two integers and returns the result.
@@ -207,7 +232,9 @@
     <summary>Show answer</summary>
      
      ```bash
-
+    #!/usr/bin/python3
+    def add(a, b):
+      return a + b
      ```
 ---
 [11. a ^ b](11-pow.py): Write a function that computes ```a``` to the power of ```b``` and return the value.
@@ -221,7 +248,9 @@
     <summary>Show answer</summary>
 
     ```bash
-
+   #!/usr/bin/python3
+   def pow(a, b):
+     return a ** b
     ```
 ---
 [12. Fizz Buzz](12-fizzbuzz.py): Write a function that prints the numbers from 1 to 100 separated by a space.
@@ -237,7 +266,20 @@
     <summary>Show answer</summary>
 
     ```bash
+    #!/usr/bin/python3
+    def fizzbuzz():
+    for num in range(1, 101):
+        if num % 3 == 0 and num % 5 == 0:
+            print("FizzBuzz", end=" ")
 
+        elif num % 3 == 0:
+            print("Fizz", end=" ")
+
+        elif num % 5 == 0:
+            print("Buzz", end=" ")
+
+        else:
+            print("{}".format(num), end=" ")
     ```
 ---
 [13. Smile in the mirror](100-print_tebahpla.py): Write a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (```z``` in lowercase and ```Y``` in uppercase) , not followed by a new line.
