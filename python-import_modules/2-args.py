@@ -4,11 +4,11 @@ from sys import argv
 if __name__ == "__main__":
 
     argc = len(argv) - 1
-    
-    if len(argv) - 1 == 1:
+
+    if argc == 1:
         print("{} argument:".format(argc))
 
-    elif len(argv) - 1 == 0:
+    elif argc == 0:
         print("{} argument.".format(argc))
 
     else:
