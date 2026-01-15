@@ -1,6 +1,8 @@
 # Python - if/else, loops, functions
 
-[0. Positive anything is better than negative nothing](0-positive_or_negative.py): This program will assign a random signed ```number``` to the variable number each time it is executed. Complete the source code in order to print whether the number stored in the variable ```number``` is positive or negative.
+## **[0. Positive anything is better than negative nothing](0-positive_or_negative.py)**
+
+This program will assign a random signed ```number``` to the variable number each time it is executed. Complete the source code in order to print whether the number stored in the variable ```number``` is positive or negative.
 
 * You can find the source code [here](https://github.com/hs-hq/0x01.py/blob/main/0-positive_or_negative.py)
 * The variable ```number``` will store a different value every time you will run this program
@@ -11,25 +13,29 @@
     * if the number is 0: ```is zero```
     * if the number is less than 0: ```is negative```
   * followed by a new line
-    <details>
-    <summary>Show answer</summary>
+<details>
+<summary>Show answer</summary>
 
-    ```bash
-    #!/usr/bin/python3
-    import random
-    number = random.randint(-10, 10)
-    
-    if number > 0:
-        print("{} is positive".format(number))
-    
-    if number == 0:
-        print("{} is zero".format(number))
-    
-    if number < 0:
-        print("{} is negative".format(number))
-    ```
+```bash
+#!/usr/bin/python3
+import random
+number = random.randint(-10, 10)
+
+if number > 0:
+    print("{} is positive".format(number))
+
+if number == 0:
+   print("{} is zero".format(number))
+
+if number < 0:
+    print("{} is negative".format(number))
+```
+</details>
+
 ---
-[1. The last digit](1-last_digit.py): This program will assign a random signed ```number``` to the variable number each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable ```number```.
+## **[1. The last digit](1-last_digit.py)**
+
+This program will assign a random signed ```number``` to the variable number each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable ```number```.
 
 * You can find the source code [here](https://github.com/hs-hq/0x01.py/blob/main/1-last_digit_py)
 * The variable ```number``` will store a different value every time you will run this program
@@ -42,77 +48,97 @@
     * if the last digit is 0: the string ```and is 0```
     * if the last digit is less than 6 and not 0: the string ```and is less than 6 and not 0```
   * followed by a new line
-    <details>
-    <summary>Show answer</summary>
 
-    ```bash
-    #!/usr/bin/python3
-    import random
-    number = random.randint(-10000, 10000)
-    
-    
-    last = abs(number) % 10
-    
-    if last > 5:
-        msg = "and is greater than 5"
-    
-    elif last == 0:
-        msg = "and is zero"
-    
-    else:
-        msg = "and is less than 6 and not 0"
-    
-    print("last digit of {} is {} {}".format(number, last, msg))
-    ```
+<details>
+<summary>Show answer</summary>
+
+```bash
+#!/usr/bin/python3
+import random
+number = random.randint(-10000, 10000)
+
+
+last = abs(number) % 10
+
+if last > 5:
+    msg = "and is greater than 5"
+
+elif last == 0:
+    msg = "and is zero"
+
+else:
+    msg = "and is less than 6 and not 0"
+
+print("last digit of {} is {} {}".format(number, last, msg))
+```
+</details>
+
 ---
-[2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game](2-print_alphabet.py): Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
+## **[2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game](2-print_alphabet.py)**
+
+Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
 
 * Use only one ```print``` function with string format
 * Use only one loop in your code
 * You are not allowed to store characters in a variable
 * You are not allowed to import any module
-    <details>
-    <summary>Show answer</summary>
 
-    ```bash
-    #!/usr/bin/python3
-    for letter in range(97, 123):
-    print("{}".format(chr(letter)), end="")
-    ```
+<details>
+<summary>Show answer</summary>
+
+```bash
+#!/usr/bin/python3
+for letter in range(97, 123):
+print("{}".format(chr(letter)), end="")
+```
+</details>
+
 ---
-[3. When I was having that alphabet soup, I never thought that it would pay off](3-print_alphabt.py): Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
+## **[3. When I was having that alphabet soup, I never thought that it would pay off](3-print_alphabt.py)**
+
+Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
 
 * Print all the letters except ```q``` and ```e```
 * You can only use one ```print``` function with string format
 * You can only use one loop in your code
 * You are not allowed to store characters in a variable
 * You are not allowed to import any module
-    <details>
-    <summary>Show answer</summary>
 
-    ```bash
-    #!/usr/bin/python3
-    for letter in range(97, 123):
-    if letter != 101 and letter != 113:
-        print("{}".format(chr(letter)), end="")
-    ```
+<details>
+<summary>Show answer</summary>
+
+```bash
+#!/usr/bin/python3
+for letter in range(97, 123):
+if letter != 101 and letter != 113:
+    print("{}".format(chr(letter)), end="")
+```
+</details>
+
 ---
-[4. Hexadecimal printing](4-print_hexa.py): Write a program that prints all numbers from ```0``` to ```98``` in decimal and in hexadecimal (as in the following example)
+## **[4. Hexadecimal printing](4-print_hexa.py)**
+
+Write a program that prints all numbers from ```0``` to ```98``` in decimal and in hexadecimal (as in the following example)
 
 * You can only use one ```print``` function with string format
 * You can only use one loop in your code
 * You are not allowed to store numbers or strings in a variable
 * You are not allowed to import any module
-    <details>
-    <summary>Show answer</summary>
 
-    ```bash
-    #!/usr/bin/python3
-    for num in range(0, 99):
-    print("{} = {}".format(num, hex(num)))
-    ```
+<details>
+<summary>Show answer</summary>
+
+```bash
+#!/usr/bin/python3
+for num in range(0, 99):
+print("{} = {}".format(num, hex(num)))
+```
+</details>
+
 ---
-[5. 00...99](5-print_comb2.py): Write a program that prints numbers from ```0``` to ```99```.
+## **[5. 00...99](5-print_comb2.py)**
+
+Write a program that prints numbers from ```0``` to ```99```.
 
 * Numbers must be separated by ```,```, followed by a space
 * Numbers should be printed in ascending order, with two digits
@@ -121,20 +147,24 @@
 * You can only use one loop in your code
 * You are not allowed to store numbers or strings in a variable
 * You are not allowed to import any module
-    <details>
-    <summary>Show answer</summary>
 
-    ```bash
-    #!/usr/bin/python3
-    for number in range(0, 100):
-    if number == 99:
-        print("{}".format(number))
-    else:
-        print("{:02}".format(number), end=", ")
-    ```
+<details>
+<summary>Show answer</summary>
+
+```bash
+#!/usr/bin/python3
+for number in range(0, 100):
+if number == 99:
+    print("{}".format(number))
+else:
+    print("{:02}".format(number), end=", ")
+```
+</details>
+
 ---
-[6. Inventing is a combination of brains and materials. The more brains you use, the less material you need
-](6-print_comb3.py): Write a program that prints all possible different combinations of two digits.
+## **[6. Inventing is a combination of brains and materials. The more brains you use, the less material you need](6-print_comb3.py)**
+
+Write a program that prints all possible different combinations of two digits.
 
 * Numbers must be separated by ```,```, followed by a space
 * The two digits must be different
@@ -146,20 +176,25 @@
 * You can only use no more than 2 loops in your code
 * You are not allowed to store numbers or strings in a variable
 * You are not allowed to import any module
-    <details>
-    <summary>Show answer</summary>
 
-    ```bash
-    #!/usr/bin/python3
-    for digit1 in range(0, 10):
-    for digit2 in range(digit1 + 1, 10):
-        if digit1 == 8 and digit2 == 9:
-            print("{}{}".format(digit1, digit2))
-        else:
-            print("{}{}".format(digit1, digit2), end=", ")
-    ```
+<details>
+<summary>Show answer</summary>
+
+```bash
+#!/usr/bin/python3
+for digit1 in range(0, 10):
+for digit2 in range(digit1 + 1, 10):
+    if digit1 == 8 and digit2 == 9:
+        print("{}{}".format(digit1, digit2))
+    else:
+        print("{}{}".format(digit1, digit2), end=", ")
+```
+</details>
+
 ---
-[7. islower](7-islower.py): Write a function that checks for lowercase character.
+## **[7. islower](7-islower.py)**
+
+Write a function that checks for lowercase character.
 
 * Prototype: ```def islower(c):```
 * Returns ```True``` if ```c``` is lowercase
@@ -169,19 +204,24 @@
 * [Tips: ord()](https://docs.python.org/3.8/library/functions.html?highlight=ord#ord)
 
   You don’t need to understand ```__import__```
-    <details>
-    <summary>Show answer</summary>
-     
-    ```bash
-    #!/usr/bin/python3
-    def islower(c):
-    if ord(c) in range(97, 123):
-        return True
-    else:
-        return False
-    ```
+
+<details>
+<summary>Show answer</summary>
+
+```bash
+#!/usr/bin/python3
+def islower(c):
+if ord(c) in range(97, 123):
+    return True
+else:
+    return False
+```
+</details>
+
 ---
-[8. To uppercase](8-uppercase.py): Write a function that prints a string in uppercase followed by a new line.
+## **[8. To uppercase](8-uppercase.py)**
+
+Write a function that prints a string in uppercase followed by a new line.
 
 * Prototype: ```def uppercase(str):```
 * You can only use no more than 2 ```print``` functions with string format
@@ -191,69 +231,89 @@
 * [Tips: ord()](https://docs.python.org/3.8/library/functions.html?highlight=ord#ord)
 
   You don’t need to understand ```__import__```
-    <details>
-    <summary>Show answer</summary>
-    
-     ```bash
-    #!/usr/bin/python3
-    def uppercase(str):
-    for c in str:
-        if ord(c) >= 97 and ord(c) <= 122:
-            c = chr(ord(c) - 32)
-        print("{}".format(c), end="")
-    print("")
-     ```
+
+<details>
+<summary>Show answer</summary>
+
+```bash
+#!/usr/bin/python3
+def uppercase(str):
+for c in str:
+    if ord(c) >= 97 and ord(c) <= 122:
+        c = chr(ord(c) - 32)
+    print("{}".format(c), end="")
+print("")
+```
+</details>
+
 ---
-[9. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important](9-print_last_digit.py): Write a function that prints the last digit of a number.
+## **[9. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important](9-print_last_digit.py)**
+
+Write a function that prints the last digit of a number.
 
 * Prototype: def print_last_digit(number):
 * Returns the value of the last digit
 * You are not allowed to import any module
 
   You don’t need to understand ```__import__```
-    <details>
-    <summary>Show answer</summary>
-    
-     ```bash
-    #!/usr/bin/python3
-    def print_last_digit(number):
-    print(abs(number) % 10, end="")
-    return abs(number) % 10
-     ```
+
+<details>
+<summary>Show answer</summary>
+
+```bash
+#!/usr/bin/python3
+def print_last_digit(number):
+print(abs(number) % 10, end="")
+return abs(number) % 10
+```
+</details>
+
 ---
-[10. a + b](10-add.py): Write a function that adds two integers and returns the result.
+## **[10. a + b](10-add.py)**
+
+Write a function that adds two integers and returns the result.
 
 * Prototype: ```def add(a, b):```
 * Returns the value of ```a + b```
 * You are not allowed to import any module
 
   You don’t need to understand ```__import__```
-    <details>
-    <summary>Show answer</summary>
-     
-     ```bash
-    #!/usr/bin/python3
-    def add(a, b):
-      return a + b
-     ```
+
+<details>
+<summary>Show answer</summary>
+
+```bash
+#!/usr/bin/python3
+def add(a, b):
+    return a + b
+```
+</details>
+
 ---
-[11. a ^ b](11-pow.py): Write a function that computes ```a``` to the power of ```b``` and return the value.
+## **[11. a ^ b](11-pow.py)**
+
+Write a function that computes ```a``` to the power of ```b``` and return the value.
 
 * Prototype: ```def pow(a, b):```
 * Returns the value of ```a ^ b```
 * You are not allowed to import any module
 
   You don’t need to understand ```__import__```
-    <details>
-    <summary>Show answer</summary>
 
-    ```bash
-   #!/usr/bin/python3
-   def pow(a, b):
-     return a ** b
-    ```
+<details>
+<summary>Show answer</summary>
+
+```bash
+#!/usr/bin/python3
+def pow(a, b):
+    return a ** b
+```
+</details>
+
 ---
-[12. Fizz Buzz](12-fizzbuzz.py): Write a function that prints the numbers from 1 to 100 separated by a space.
+## **[12. Fizz Buzz](12-fizzbuzz.py)**
+
+Write a function that prints the numbers from 1 to 100 separated by a space.
 
 * For multiples of three print ```Fizz``` instead of the number and for multiples of five print ```Buzz```.
 * For numbers which are multiples of both three and five print ```FizzBuzz```.
@@ -262,51 +322,28 @@
 * You are not allowed to import any module
 
   You don’t need to understand ```__import__```
-    <details>
-    <summary>Show answer</summary>
 
-    ```bash
-    #!/usr/bin/python3
-    def fizzbuzz():
-    for num in range(1, 101):
-        if num % 3 == 0 and num % 5 == 0:
-            print("FizzBuzz", end=" ")
+<details>
+<summary>Show answer</summary>
 
-        elif num % 3 == 0:
-            print("Fizz", end=" ")
+```bash
+#!/usr/bin/python3
+def fizzbuzz():
+for num in range(1, 101):
+    if num % 3 == 0 and num % 5 == 0:
+        print("FizzBuzz", end=" ")
 
-        elif num % 5 == 0:
-            print("Buzz", end=" ")
+    elif num % 3 == 0:
+        print("Fizz", end=" ")
 
-        else:
-            print("{}".format(num), end=" ")
-    ```
----
-[13. Smile in the mirror](100-print_tebahpla.py): Write a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (```z``` in lowercase and ```Y``` in uppercase) , not followed by a new line.
+    elif num % 5 == 0:
+        print("Buzz", end=" ")
 
-* You can only use one ```print``` function with string format
-* You can only use one loop in your code
-* You are not allowed to store characters in a variable
-* You are not allowed to import any module
-    <details>
-    <summary>Show answer</summary>
+    else:
+        print("{}".format(num), end=" ")
+```
+</details>
 
-    ```bash
-
-    ```
----
-[14. Remove at position](101-remove_char_at.py): Write a function that creates a copy of the string, removing the character at the position ```n``` (not the Python way, the “C array index”).
-
-* Prototype: ```def remove_char_at(str, n):```
-* You are not allowed to import any module
-
-  You don’t need to understand ```__import__```
-    <details>
-    <summary>Show answer</summary>
-
-    ```bash
-
-    ```
 ---
 
   ### By Anthony Goutieras
