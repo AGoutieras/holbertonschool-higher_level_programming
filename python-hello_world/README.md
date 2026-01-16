@@ -1,5 +1,5 @@
 <a href="#"><img src="https://img.shields.io/badge/-006CAF.svg?style=for-the-badge&logo=c&logoColor=white" /></a>
-[![Holberton](https://img.shields.io/badge/Holberton-E31C3F.svg?style=for-the-badge)](https://www.holbertonschool.fr/)
+<a href="#"><img src="https://img.shields.io/badge/Holberton-E31C3F.svg?style=for-the-badge" target="_blank"/></a>
 
 # Python - Hello, World
 * ## **[0. Hello, print](2-print.py)**
