@@ -58,17 +58,17 @@ Multiple.
 <BLANKLINE>
 dots!!
 
->>> text_indentation("     Hello     ")
-Hello
-
 >>> text_indentation("     Hello     .")
 Hello     .
 <BLANKLINE>
 
 >>> text_indentation('\n.\n?\n:')
+<BLANKLINE>
 .
 <BLANKLINE>
+<BLANKLINE>
 ?
+<BLANKLINE>
 <BLANKLINE>
 :
 <BLANKLINE>
