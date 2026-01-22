@@ -50,10 +50,25 @@ Traceback (most recent call last):
 TypeError: text must be a string
 
 >>> text_indentation("Multiple...dots!!")
-Multiple
-<BLANKLINE>
+Multiple.
 <BLANKLINE>
 .
 <BLANKLINE>
+.
 <BLANKLINE>
 dots!!
+
+>>> text_indentation("     Hello     ")
+Hello
+
+>>> text_indentation("     Hello     .")
+Hello     .
+<BLANKLINE>
+
+>>> text_indentation('\n.\n?\n:')
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
