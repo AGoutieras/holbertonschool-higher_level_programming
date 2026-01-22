@@ -1,0 +1,35 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text = "Hello world. How are you? I'm fine: thanks!"
+>>> text_indentation(text)
+Hello world.
+<BLANKLINE>
+How are you?
+<BLANKLINE>
+I'm fine:
+<BLANKLINE>
+thanks!
+
+>>> text_indentation("This is a test. Another test.")
+This is a test.
+<BLANKLINE>
+Another test.
+<BLANKLINE>
+
+>>> text_indentation("Multiple separators: here. And here? Yes!")
+Multiple separators:
+<BLANKLINE>
+here.
+<BLANKLINE>
+And here?
+<BLANKLINE>
+Yes!
+
+>>> text_indentation("")  # empty string
+>>> text_indentation("No separators here")  # no separators
+No separators here
+
+>>> text_indentation(123)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
