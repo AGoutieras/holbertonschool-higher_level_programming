@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines an integer addition function."""
+"""Divides all elements of a matrix by a number."""
 
 
 def matrix_divided(matrix, div):
