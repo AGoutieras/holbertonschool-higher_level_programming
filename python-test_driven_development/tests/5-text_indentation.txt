@@ -25,8 +25,8 @@ And here?
 <BLANKLINE>
 Yes!
 
->>> text_indentation("")  # empty string
->>> text_indentation("No separators here")  # no separators
+>>> text_indentation("")
+>>> text_indentation("No separators here")
 No separators here
 
 >>> text_indentation(123)
@@ -43,3 +43,17 @@ TypeError: text must be a string
 Traceback (most recent call last):
     ...
 TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+>>> text_indentation("Multiple...dots!!")
+Multiple
+<BLANKLINE>
+<BLANKLINE>
+.
+<BLANKLINE>
+<BLANKLINE>
+dots!!
