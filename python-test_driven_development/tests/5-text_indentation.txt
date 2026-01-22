@@ -2,42 +2,26 @@
 
 >>> text = "Hello world. How are you? I'm fine: thanks!"
 >>> text_indentation(text)
-Hello world
+Hello world.
 <BLANKLINE>
-.
+How are you?
 <BLANKLINE>
-How are you
-<BLANKLINE>
-?
-<BLANKLINE>
-I'm fine
-<BLANKLINE>
-:
+I'm fine:
 <BLANKLINE>
 thanks!
 
 >>> text_indentation("This is a test. Another test.")
-This is a test
+This is a test.
 <BLANKLINE>
-.
-<BLANKLINE>
-Another test
-<BLANKLINE>
-.
+Another test.
 <BLANKLINE>
 
 >>> text_indentation("Multiple separators: here. And here? Yes!")
-Multiple separators
+Multiple separators:
 <BLANKLINE>
-:
+here.
 <BLANKLINE>
-here
-<BLANKLINE>
-.
-<BLANKLINE>
-And here
-<BLANKLINE>
-?
+And here?
 <BLANKLINE>
 Yes!
 
@@ -66,9 +50,7 @@ Traceback (most recent call last):
 TypeError: text must be a string
 
 >>> text_indentation("Multiple...dots!!")
-Multiple
-<BLANKLINE>
-.
+Multiple.
 <BLANKLINE>
 .
 <BLANKLINE>
@@ -80,9 +62,7 @@ dots!!
 Hello
 
 >>> text_indentation("     Hello     .")
-Hello
-<BLANKLINE>
-.
+Hello     .
 <BLANKLINE>
 
 >>> text_indentation('\n.\n?\n:')
