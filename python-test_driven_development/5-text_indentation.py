@@ -18,16 +18,15 @@ def text_indentation(text):
     separators = ".?:"
     i = 0
     length = len(text)
+    line = ""
 
     while i < length:
-        line = ""
-        while i < length and text[i] not in separators:
-            line += text[i]
-            i += 1
+        char = text[i]
+        line += char
+        if char in separators:
+            print(line.strip(), end="\n\n")
+            line = ""
+        i += 1
 
-        if line.strip():
-            print(line.strip(), end="\n\n" if i < length else "\n")
-
-        if i < length and text[i] in separators:
-            print(text[i], end="\n\n")
-            i += 1
+    if line.strip():
+        print(line.strip())
