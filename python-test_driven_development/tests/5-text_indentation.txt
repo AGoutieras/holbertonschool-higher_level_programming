@@ -72,3 +72,13 @@ Hello     .
 <BLANKLINE>
 :
 <BLANKLINE>
+
+>>> text_indentation(True)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+>>> text_indentation(str)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
