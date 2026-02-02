@@ -1,0 +1,41 @@
+>>> MyList = __import__('1-my_list').MyList
+
+# Unsorted list
+
+>>> numbers = MyList([3, 1, 4, 2])
+>>> numbers.print_sorted()
+[1, 2, 3, 4]
+
+# Sorted list
+
+>>> sorted_numbers = MyList([1, 2, 3, 4])
+>>> sorted_numbers.print_sorted()
+[1, 2, 3, 4]
+
+# Empty list
+
+>>> empty_list = MyList([])
+>>> empty_list.print_sorted()
+[]
+
+# List with a single element
+
+>>> single_element = MyList([42])
+>>> single_element.print_sorted()
+[42]
+
+# List with multiple random numbers
+
+>>> random_numbers = MyList([10, 5, 7, 3, 8])
+>>> random_numbers.print_sorted()
+[3, 5, 7, 8, 10]
+
+# List with string
+>>> string = MyList(["Hello", "World"])
+>>> string.print_sorted()
+['Hello', 'World']
+
+# List with 'None'
+>>> none = MyList([None])
+>>> none.print_sorted()
+[None]
