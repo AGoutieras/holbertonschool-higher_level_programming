@@ -39,3 +39,10 @@
 >>> none = MyList([None])
 >>> none.print_sorted()
 [None]
+
+# List with different types
+>>> my_list = MyList([1, "Hello", "World", 2])
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+...
+TypeError: '<' not supported between instances of 'str' and 'int'
