@@ -1,5 +1,36 @@
 >>> MyList = __import__('1-my_list').MyList
 
+>>> my_list = MyList()
+
+>>> my_list.append(1)
+>>> print(my_list)
+[1]
+
+>>> my_list.append(4)
+>>> print(my_list)
+[1, 4]
+
+>>> my_list.append(2)
+>>> print(my_list)
+[1, 4, 2]
+
+>>> my_list.append(3)
+>>> print(my_list)
+[1, 4, 2, 3]
+
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+
 # Unsorted list
 
 >>> numbers = MyList([3, 1, 4, 2])
@@ -31,18 +62,21 @@
 [3, 5, 7, 8, 10]
 
 # List with string
+
 >>> string = MyList(["Hello", "World"])
 >>> string.print_sorted()
 ['Hello', 'World']
 
 # List with 'None'
+
 >>> none = MyList([None])
 >>> none.print_sorted()
 [None]
 
 # List with different types
->>> my_list = MyList([1, "Hello", "World", 2])
->>> my_list.print_sorted()
+
+>>> diff_types = MyList([1, "Hello", 3.14, "a"])
+>>> diff_types.print_sorted()
 Traceback (most recent call last):
 ...
 TypeError: '<' not supported between instances of 'str' and 'int'
