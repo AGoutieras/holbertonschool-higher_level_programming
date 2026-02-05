@@ -23,6 +23,8 @@ class Circle(Shape):
 
     def __init__(self, radius):
         """Initialize a circle with a given radius."""
+        if radius <= 0:
+            raise ValueError("Radius must be positive")
         self.radius = radius
 
     def area(self):
@@ -47,7 +49,7 @@ class Rectangle(Shape):
 
     def perimeter(self):
         """Return the perimeter of the rectangle."""
-        return self.width * 2 + self.height * 2
+        return 2 * (self.width + self.height)
 
 
 def shape_info(obj):
