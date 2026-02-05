@@ -1,129 +1,198 @@
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+# Instanciation tests
+
 >>> bg = BaseGeometry()
+>>> bg_2 = BaseGeometry()
+>>> bg_2 = BaseGeometry(1, 2)
+Traceback (most recent call last):
+...
+TypeError: BaseGeometry() takes no arguments
+
+# Class tests
+
+>>> issubclass(BaseGeometry, object)
+True
+>>> "area" in dir(BaseGeometry)
+True
+>>> "integer_validator" in dir(BaseGeometry)
+True
+
+# Instances
+
+>>> type(bg) == BaseGeometry
+True
+>>> type(bg) == type(bg_2)
+True
+>>> bg == bg_2
+False
+>>> isinstance(bg, object)
+True
+>>> hasattr(bg, "area")
+True
+>>> hasattr(bg, "integer_validator")
+True
+>>> callable(bg.area)
+True
+>>> callable(bg.integer_validator)
+True
+
+# area()
+
+>>> bg.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+
+>>> bg.area(1)
+Traceback (most recent call last):
+...
+TypeError: area() takes 1 positional argument but 2 were given
+
+# Arguments error in integer_validator
+
+>>> bg.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+>>> bg.integer_validator("integer")
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+>>> bg.integer_validator("integer", 1, 2)
+Traceback (most recent call last):
+...
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+# Valid cases
+
 >>> bg.integer_validator("my_int", 12)
 >>> bg.integer_validator("width", 89)
+>>> bg.integer_validator("min", 1)
+>>> bg.integer_validator("big", 123456789)
+>>> bg.integer_validator("Long string (with strange chars!)", 1234567890)
+
+# TypeError: not an integer
 
 >>> bg.integer_validator("name", "John")
 Traceback (most recent call last):
 ...
 TypeError: name must be an integer
 
+>>> bg.integer_validator("num_str", "12")
+Traceback (most recent call last):
+...
+TypeError: num_str must be an integer
+
+>>> bg.integer_validator("empty", "")
+Traceback (most recent call last):
+...
+TypeError: empty must be an integer
+
+>>> bg.integer_validator("age:cm", "12")
+Traceback (most recent call last):
+...
+TypeError: age:cm must be an integer
+
+>>> bg.integer_validator("pi", 3.14)
+Traceback (most recent call last):
+...
+TypeError: pi must be an integer
+
+>>> bg.integer_validator("float_int", 33.0)
+Traceback (most recent call last):
+...
+TypeError: float_int must be an integer
+
+>>> bg.integer_validator("almost_int", 0.0)
+Traceback (most recent call last):
+...
+TypeError: almost_int must be an integer
+
+>>> bg.integer_validator("none", None)
+Traceback (most recent call last):
+...
+TypeError: none must be an integer
+
+>>> bg.integer_validator("list", [])
+Traceback (most recent call last):
+...
+TypeError: list must be an integer
+
+>>> bg.integer_validator("list", [1, 2, 3])
+Traceback (most recent call last):
+...
+TypeError: list must be an integer
+
+>>> bg.integer_validator("tuple", ())
+Traceback (most recent call last):
+...
+TypeError: tuple must be an integer
+
+>>> bg.integer_validator("tuple", (1, 2, 3))
+Traceback (most recent call last):
+...
+TypeError: tuple must be an integer
+
+>>> bg.integer_validator("set", {})
+Traceback (most recent call last):
+...
+TypeError: set must be an integer
+
+>>> bg.integer_validator("set", {1, 2, 3})
+Traceback (most recent call last):
+...
+TypeError: set must be an integer
+
+>>> bg.integer_validator("dict", {"a": 1, "b": 2})
+Traceback (most recent call last):
+...
+TypeError: dict must be an integer
+
+# bool must be rejected (strict int)
+
+>>> bg.integer_validator("true", True)
+Traceback (most recent call last):
+...
+TypeError: true must be an integer
+
+>>> bg.integer_validator("false", False)
+Traceback (most recent call last):
+...
+TypeError: false must be an integer
+
+# ValueError: <= 0
+
 >>> bg.integer_validator("age", 0)
 Traceback (most recent call last):
 ...
 ValueError: age must be greater than 0
+
+>>> bg.integer_validator("age", -0)
+Traceback (most recent call last):
+...
+ValueError: age must be greater than 0
+
+>>> bg.integer_validator("minus_one", -1)
+Traceback (most recent call last):
+...
+ValueError: minus_one must be greater than 0
 
 >>> bg.integer_validator("distance", -4)
 Traceback (most recent call last):
 ...
 ValueError: distance must be greater than 0
 
->>> bg.integer_validator()
+# Name formatting edge cases (still stable)
+
+>>> bg.integer_validator("", "John")
 Traceback (most recent call last):
 ...
-TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+TypeError:  must be an integer
 
->>> bg.integer_validator(None)
+>>> bg.integer_validator("distance:m", int("0"))
 Traceback (most recent call last):
 ...
-TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
-
->>> bg = BaseGeometry()
->>> isinstance(bg, BaseGeometry)
-True
-
->>> bg = BaseGeometry()
->>> bg.area()
-Traceback (most recent call last):
-...
-Exception: area() is not implemented
-
->>> bg.integer_validator("width", 3.5)
-Traceback (most recent call last):
-...
-TypeError: width must be an integer
-
-bg.integer_validator("width", "5")
-Traceback (most recent call last):
-...
-TypeError: width must be an integer
-
->>> bg.integer_validator("width", True)
-
->>> bg = BaseGeometry()
->>> bg.integer_validator("width", 10**18)
-
->>> bg.integer_validator("height", -10**9)
-Traceback (most recent call last):
-ValueError: height must be greater than 0
-
->>> bg.integer_validator("width", [5])
-Traceback (most recent call last):
-TypeError: width must be an integer
-
->>> bg.integer_validator("width", (5,))
-Traceback (most recent call last):
-TypeError: width must be an integer
-
->>> bg.integer_validator("", -1)
-Traceback (most recent call last):
-ValueError:  must be greater than 0
-
->>> bg.integer_validator("side length", 0)
-Traceback (most recent call last):
-ValueError: side length must be greater than 0
-
->>> bg.integer_validator(123, 5)
-
->>> bg.integer_validator("width", {"value": 5})
-Traceback (most recent call last):
-TypeError: width must be an integer
-
->>> BaseGeometry("a", "b")
-Traceback (most recent call last):
-...
-TypeError: BaseGeometry() takes no arguments
-
->>> BaseGeometry(1)
-Traceback (most recent call last):
-...
-TypeError: BaseGeometry() takes no arguments
-
->>> bg1 = BaseGeometry()
->>> bg2 = BaseGeometry()
->>> bg1 is bg2
-False
-
->>> bg1 == bg2
-False
-
->>> id(bg1) != id(bg2)
-True
-
->>> bg.area(1)
-Traceback (most recent call last):
-...
-TypeError: BaseGeometry.area() takes 1 positional argument but 2 were given
-
->>> bg.area(x=1)
-Traceback (most recent call last):
-...
-TypeError: BaseGeometry.area() got an unexpected keyword argument 'x'
-
->>> bg.integer_validator("only_name")
-Traceback (most recent call last):
-...
-TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
-
->>> bg.integer_validator("a", 1, 2)
-Traceback (most recent call last):
-...
-TypeError: BaseGeometry.integer_validator() takes 3 positional arguments but 4 were given
-
->>> bg.integer_validator("true", True)
-
->>> bg.integer_validator("false", False)
-Traceback (most recent call last):
-...
-ValueError: false must be greater than 0
+ValueError: distance:m must be greater than 0
