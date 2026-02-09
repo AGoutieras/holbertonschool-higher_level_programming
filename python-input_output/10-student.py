@@ -20,5 +20,3 @@ class Student:
                     filtered[key] = self.__dict__[key]
             return filtered
         return self.__dict__
-
-    
