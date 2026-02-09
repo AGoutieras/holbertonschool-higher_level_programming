@@ -20,8 +20,3 @@ class Student:
                     filtered[key] = self.__dict__[key]
             return filtered
         return self.__dict__
-
-    def reload_from_json(self, json):
-        """replaces all attributes of the Student instance"""
-        for key, value in json.items():
-            setattr(self, key, value)
