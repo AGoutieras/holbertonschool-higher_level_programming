@@ -10,9 +10,9 @@ class CustomObject:
         self.is_student = bool(is_student)
 
     def display(self):
-        print(self.name)
-        print(self.age)
-        print(self.is_student)
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age}")
+        print(f"Is Student: {self.is_student}")
 
     def serialize(self, filename):
         with open(filename, 'wb') as f:
