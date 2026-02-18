@@ -20,7 +20,7 @@ Write a program that imports the function ```def add(a, b):``` from the file ```
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 if __name__ == "__main__":
     from add_0 import add
@@ -49,7 +49,7 @@ Write a program that imports functions from the file ```calculator_1.py```, does
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
@@ -80,7 +80,7 @@ Write a program that prints the number of and the list of its arguments.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 from sys import argv
 
@@ -112,7 +112,7 @@ Write a program that prints the result of the addition of all arguments
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 from sys import argv
 
@@ -141,7 +141,7 @@ Write a program that prints all the names defined by the compiled module **hidde
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 import hidden_4
 if __name__ == "__main__":
@@ -168,7 +168,7 @@ Write a program that imports the variable ```a``` from the file ```variable_load
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 if __name__ == "__main__":
     from variable_load_5 import a
@@ -202,7 +202,7 @@ Write a program that imports all functions from the file ```calculator_1.py``` a
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
@@ -247,7 +247,7 @@ if __name__ == "__main__":
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 __import__('sys').stdout.write("#pythoniscool\n")
 ```
