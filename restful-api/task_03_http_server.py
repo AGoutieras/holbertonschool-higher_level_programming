@@ -16,7 +16,7 @@ class Server(http.server.BaseHTTPRequestHandler):
             self.send_header('Content-type', 'application/json')
             self.end_headers()
             data = {"name": "John", "age": 30, "city": "New York"}
-            self.wfile.write(json.dumps(data).encode())
+            self.wfile.write(json.dumps(data).encode('utf-8'))
 
         elif self.path == "/status":
             self.send_response(200)
@@ -46,10 +46,5 @@ class Server(http.server.BaseHTTPRequestHandler):
 
 server = HTTPServer((host, port), Server)
 
-try:
-    print(f"Server successfully started on http://{host}:{port}")
-    server.serve_forever()
-except KeyboardInterrupt:
-    print("\nServer stopped by user")
-finally:
-    server.server_close()
+print(f"Server successfully started!")
+server.serve_forever()
