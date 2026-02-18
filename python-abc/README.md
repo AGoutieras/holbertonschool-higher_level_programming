@@ -30,7 +30,7 @@ Python ```ABC``` documentation: https://docs.python.org/3/library/abc.html
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 from abc import ABC, abstractmethod
 class Animal(ABC):
@@ -86,7 +86,7 @@ In this exercise, we'll use abstract base classes to design a blueprint for shap
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines shapes using abstract base classes."""
 
@@ -173,7 +173,7 @@ Create a class named ```VerboseList``` that extends the Python ```list``` class.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Extends the Python list class and prints a notification message"""
 
@@ -237,7 +237,7 @@ Use the ```get_count``` method to retrieve and print the number of items that ha
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Extends the built-in iterator obtained from the iter function."""
 
@@ -300,7 +300,7 @@ Construct a ```FlyingFish``` class that inherits from both a ```Fish``` class an
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """
 Construct a FlyingFish class that inherits
@@ -406,7 +406,7 @@ Design two mixin classes, ```SwimMixin``` and ```FlyMixin```, each equipped with
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """
 This module defines mixin classes for swimming and flying abilities,
