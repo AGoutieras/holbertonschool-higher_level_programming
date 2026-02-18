@@ -10,7 +10,7 @@
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 
 ```
 </details>
@@ -24,22 +24,7 @@
 <details>
 <summary>Show answer</summary>
 
-```bash
-
-```
-</details>
-
----
-
-
-* ## **[]()**
-
-
-
-<details>
-<summary>Show answer</summary>
-
-```bash
+```python
 
 ```
 </details>
@@ -54,7 +39,7 @@
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 
 ```
 </details>
@@ -69,7 +54,7 @@
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 
 ```
 </details>
@@ -84,7 +69,7 @@
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 
 ```
 </details>
@@ -99,7 +84,7 @@
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 
 ```
 </details>
@@ -114,7 +99,7 @@
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 
 ```
 </details>
@@ -129,7 +114,7 @@
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 
 ```
 </details>
@@ -144,7 +129,7 @@
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 
 ```
 </details>
@@ -159,7 +144,7 @@
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 
 ```
 </details>
@@ -174,7 +159,7 @@
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 
 ```
 </details>
@@ -189,7 +174,22 @@
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
+
+```
+</details>
+
+---
+
+
+* ## **[]()**
+
+
+
+<details>
+<summary>Show answer</summary>
+
+```python
 
 ```
 </details>
