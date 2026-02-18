@@ -17,7 +17,7 @@ Write a function that prints all integers of a list.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def print_list_integer(my_list=[]):
     for i in my_list:
@@ -41,7 +41,7 @@ Write a function that retrieves an element from a list.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def element_at(my_list, idx):
     if idx < 0:
@@ -71,7 +71,7 @@ You are not allowed to use ```try/except```
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def replace_in_list(my_list, idx, element):
 
@@ -99,7 +99,7 @@ Write a function that prints all integers of a list, in reverse order.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def print_reversed_list_integer(my_list=[]):
     for i in reversed(my_list):
@@ -123,7 +123,7 @@ Write a function that replaces an element in a list at a specific position witho
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def new_in_list(my_list, idx, element):
     if idx < 0 or idx > (len(my_list) - 1):
@@ -150,7 +150,7 @@ Write a function that removes all characters c and C from a string.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def no_c(my_string):
     string_copy = [x for x in my_string if x != 'c' and x != 'C']
@@ -176,7 +176,7 @@ Write a function that prints a matrix of integers.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
     for i in range(len(matrix)):
@@ -208,7 +208,7 @@ Write a function that adds 2 tuples.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def add_tuple(tuple_a=(), tuple_b=()):
     a0 = tuple_a[0] if len(tuple_a) > 0 else 0
@@ -233,7 +233,7 @@ Write a function that returns a tuple with the length of a string and its first 
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def multiple_returns(sentence):
 
@@ -261,7 +261,7 @@ Write a function that finds the biggest integer of a list.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def max_integer(my_list=[]):
     if not my_list:
@@ -291,7 +291,7 @@ Write a function that finds all multiples of 2 in a list.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def divisible_by_2(my_list=[]):
     result = []
@@ -321,7 +321,7 @@ You are not allowed to import any module
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def delete_at(my_list=[], idx=0):
     if idx < 0 or idx >= len(my_list):
@@ -347,7 +347,7 @@ Complete the source code in order to switch value of ```a``` and ```b```
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 a = 89
 b = 10
