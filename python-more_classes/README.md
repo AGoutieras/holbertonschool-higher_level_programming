@@ -12,7 +12,7 @@ Write an empty class ```Rectangle``` that defines a rectangle:
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines a rectangle."""
 
@@ -45,7 +45,7 @@ Write a class ```Rectangle``` that defines a rectangle by: (based on ```0-rectan
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines a rectangle class with width and height attributes."""
 
@@ -126,7 +126,7 @@ Write a class ```Rectangle``` that defines a rectangle by: (based on ```1-rectan
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines a rectangle class with width and height attributes."""
 
@@ -223,7 +223,7 @@ Write a class ```Rectangle``` that defines a rectangle by: (based on ```2-rectan
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines a rectangle class with width and height attributes."""
 
@@ -339,7 +339,7 @@ Write a class ```Rectangle``` that defines a rectangle by: (based on ```3-rectan
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines a rectangle class with width and height attributes."""
 
@@ -463,7 +463,7 @@ Write a class ```Rectangle``` that defines a rectangle by: (based on ```4-rectan
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines a rectangle class with width and height attributes."""
 
@@ -595,7 +595,7 @@ Write a class ```Rectangle``` that defines a rectangle by: (based on ```4-rectan
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines a rectangle class with width and height attributes."""
 
@@ -736,7 +736,7 @@ Write a class ```Rectangle``` that defines a rectangle by: (based on ```4-rectan
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines a rectangle class with width and height attributes."""
 
@@ -882,7 +882,7 @@ Write a class ```Rectangle``` that defines a rectangle by: (based on ```4-rectan
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines a rectangle class with width and height attributes."""
 
@@ -1048,7 +1048,7 @@ Write a class ```Rectangle``` that defines a rectangle by: (based on ```4-rectan
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines a rectangle class with width and height attributes."""
 
