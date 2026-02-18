@@ -20,7 +20,7 @@ Write a function that prints ```x``` elements of a list.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
 
@@ -56,7 +56,7 @@ Write a function that prints an integer with ```"{:d}".format()```.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def safe_print_integer(value):
     try:
@@ -87,7 +87,7 @@ Write a function that prints the first x elements of a list and only integers.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
     count = 0
@@ -122,7 +122,7 @@ Write a function that divides 2 integers and prints the result.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
     count = 0
@@ -163,7 +163,7 @@ Write a function that divides element by element 2 lists.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def list_division(my_list_1, my_list_2, list_length):
     new_list = []
@@ -199,7 +199,7 @@ Write a function that raises a type exception.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def raise_exception():
     raise TypeError
@@ -218,7 +218,7 @@ Write a function that raises a name exception with a message.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def raise_exception_msg(message=""):
     raise NameError(message)
