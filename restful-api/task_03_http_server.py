@@ -35,7 +35,6 @@ class Server(http.server.BaseHTTPRequestHandler):
                 "version": "1.0",
                 "description": "A simple API built with http.server"}
             self.wfile.write(json.dumps(data).encode('utf-8'))
-            
 
         else:
             self.send_response(404)
