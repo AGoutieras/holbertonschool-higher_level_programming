@@ -9,7 +9,7 @@ Create a basic serialization module that adds the functionality to serialize a P
 
 # Instructions:
 Write a Python module named ```task_00_basic_serialization.py``` with the following functions:
-```bash
+```python
 def serialize_and_save_to_file(data, filename):
     # Your code here to serialize and save data to the specified file
     pass
@@ -28,7 +28,7 @@ The function ```load_and_deserialize``` take 1 ```parameters```:
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 
 import json
@@ -61,7 +61,7 @@ Learn how to serialize and deserialize custom Python objects using the ```pickle
 * ```is_student``` (a boolean)
 
 Additionally, the class should have a method display method to print out the object's attributes with the following format:
-```bash
+```
 Name: John
 Age: 25
 Is Student: True
@@ -79,7 +79,7 @@ Is Student: True
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 
 import pickle
@@ -119,7 +119,7 @@ The objective of this exercise is to gain experience in reading data from one fo
 
 # Instructions:
 1. Begin by importing the required modules:
-```bash
+```python
 import csv
 import json
 ```
@@ -140,7 +140,7 @@ import json
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 
 import csv
@@ -173,7 +173,7 @@ In this exercise we'll explore serialization and deserialization using XML as an
 
 # Instructions:
 Begin by importing the required modules. You can use the ```xml.etree.ElementTree``` module which is a part of Python's standard library for XML processing:
-```bash
+```python
 import xml.etree.ElementTree as ET
 ```
 
@@ -198,7 +198,7 @@ import xml.etree.ElementTree as ET
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 
 import xml.etree.ElementTree as ET
