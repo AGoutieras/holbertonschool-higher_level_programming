@@ -1,13 +1,15 @@
 #!/usr/bin/python3
-
+"""Simple HTTP API"""
 import json
 import http.server
 from http.server import HTTPServer
 
 
-class Server(http.server.BaseHTTPRequestHandler):
+class SimpleHandler(http.server.BaseHTTPRequestHandler):
+    """HTTP request handler"""
+    
     def do_GET(self):
-
+        """Handles GET requests"""
         if self.path == "/data":
             self.send_response(200)
             self.send_header('Content-type', 'application/json')
@@ -34,7 +36,7 @@ class Server(http.server.BaseHTTPRequestHandler):
             info = {
                 "version": "1.0",
                 "description": "A simple API built with http.server"}
-            self.wfile.write(json.dumps(data).encode('utf-8'))
+            self.wfile.write(json.dumps(info).encode('utf-8'))
 
         else:
             self.send_response(404)
@@ -45,6 +47,6 @@ class Server(http.server.BaseHTTPRequestHandler):
 if __name__ == "__main__":
     PORT = 8000
     server_address = ('', PORT)
-    server = HTTPServer(server_address, Server)
+    server = HTTPServer(server_address, SimpleHandler)
     print(f"Server successfully started!")
     server.serve_forever()
