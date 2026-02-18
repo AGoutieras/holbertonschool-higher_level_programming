@@ -4,9 +4,6 @@ import json
 import http.server
 from http.server import HTTPServer
 
-host = "localhost"
-port = 8000
-
 
 class Server(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
@@ -36,8 +33,9 @@ class Server(http.server.BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(b"404 Not Found.")
 
-
-server = HTTPServer((host, port), Server)
-
-print(f"Server successfully started!")
-server.serve_forever()
+if __name__ == "__main__":
+    PORT = 8000
+    server_address = ('', PORT)
+    server = HTTPServer(server_address, Server)
+    print(f"Server successfully started!")
+    server.serve_forever()
