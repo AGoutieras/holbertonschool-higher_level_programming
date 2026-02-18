@@ -19,7 +19,7 @@ This program will assign a random signed ```number``` to the variable number eac
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 import random
 number = random.randint(-10, 10)
@@ -55,7 +55,7 @@ This program will assign a random signed ```number``` to the variable number eac
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
@@ -89,7 +89,7 @@ Write a program that prints the ASCII alphabet, in lowercase, not followed by a 
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 for letter in range(97, 123):
 print("{}".format(chr(letter)), end="")
@@ -110,7 +110,7 @@ Write a program that prints the ASCII alphabet, in lowercase, not followed by a 
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 for letter in range(97, 123):
 if letter != 101 and letter != 113:
@@ -131,7 +131,7 @@ Write a program that prints all numbers from ```0``` to ```98``` in decimal and 
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 for num in range(0, 99):
 print("{} = {}".format(num, hex(num)))
@@ -154,7 +154,7 @@ Write a program that prints numbers from ```0``` to ```99```.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 for number in range(0, 100):
 if number == 99:
@@ -183,7 +183,7 @@ Write a program that prints all possible different combinations of two digits.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 for digit1 in range(0, 10):
 for digit2 in range(digit1 + 1, 10):
@@ -211,7 +211,7 @@ Write a function that checks for lowercase character.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def islower(c):
 if ord(c) in range(97, 123):
@@ -238,7 +238,7 @@ Write a function that prints a string in uppercase followed by a new line.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def uppercase(str):
 for c in str:
@@ -263,7 +263,7 @@ Write a function that prints the last digit of a number.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def print_last_digit(number):
 print(abs(number) % 10, end="")
@@ -285,7 +285,7 @@ Write a function that adds two integers and returns the result.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def add(a, b):
     return a + b
@@ -306,7 +306,7 @@ Write a function that computes ```a``` to the power of ```b``` and return the va
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def pow(a, b):
     return a ** b
@@ -329,7 +329,7 @@ Write a function that prints the numbers from 1 to 100 separated by a space.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def fizzbuzz():
 for num in range(1, 101):
