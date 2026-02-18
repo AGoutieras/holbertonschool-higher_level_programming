@@ -19,7 +19,7 @@ Write a function that computes the square value of all integers of a matrix.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     new_matrix = []
@@ -49,7 +49,7 @@ Write a function that replaces all occurrences of an element by another in a new
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def search_replace(my_list, search, replace):
     new_list = []
@@ -76,7 +76,7 @@ Write a function that adds all unique integers in a list (only once for each int
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def uniq_add(my_list=[]):
 
@@ -103,7 +103,7 @@ Write a function that returns a set of common elements in two sets.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def common_elements(set_1, set_2):
     common = []
@@ -128,7 +128,7 @@ Write a function that returns a set of all elements present in only one set.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def only_diff_elements(set_1, set_2):
 
@@ -158,7 +158,7 @@ Write a function that returns the number of keys in a dictionary.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def number_keys(a_dictionary):
     return len(a_dictionary)
@@ -181,7 +181,7 @@ Write a function that prints a dictionary by ordered keys.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def print_sorted_dictionary(a_dictionary):
     for i in sorted(a_dictionary.keys()):
@@ -205,7 +205,7 @@ Write a function that replaces or adds key/value in a dictionary.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def update_dictionary(a_dictionary, key, value):
     a_dictionary[key] = value
@@ -227,7 +227,7 @@ Write a function that deletes a key in a dictionary.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def simple_delete(a_dictionary, key=""):
     if key in a_dictionary:
@@ -250,7 +250,7 @@ Write a function that returns a new dictionary with all values multiplied by 2
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def multiply_by_2(a_dictionary):
     new_dict = {}
@@ -277,7 +277,7 @@ Write a function that returns a key with the biggest integer value.
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def best_score(a_dictionary):
     if not a_dictionary:
@@ -313,7 +313,7 @@ Write a function that returns a list with all values multiplied by a number with
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def multiply_list_map(my_list=[], number=0):
     return list(map(lambda x: x * number, my_list))
@@ -338,7 +338,7 @@ Create a function )```def roman_to_int(roman_string):)``` that converts a [Roman
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 def roman_to_int(roman_string):
     if not isinstance(roman_string, str) or roman_string == "":
