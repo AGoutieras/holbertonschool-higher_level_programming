@@ -11,7 +11,7 @@ Write a Python script that prints exactly ```"Programming is like building a mul
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 print("\"Programming is like building a multilingual puzzle")
 ```
@@ -35,7 +35,7 @@ Complete this [source code](https://github.com/hs-hq/0x00.py/blob/master/3-print
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 number = 98
 print(f"{number} Battery street")
@@ -58,7 +58,7 @@ Complete the source code in order to print the float stored in the variable ```n
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 number = 3.14159
 print(f"Float: {number:.2f}")
@@ -83,7 +83,7 @@ Complete this [source code](https://github.com/hs-hq/0x00.py/blob/master/5-print
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 number = 3.14159
 print(f"Float: {number:.2f}")
@@ -103,7 +103,7 @@ Complete this [source code](https://github.com/hs-hq/0x00.py/blob/master/6-conca
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 str1 = "Holberton"
 str2 = "School"
@@ -127,7 +127,7 @@ Complete this [source code](https://github.com/hs-hq/0x00.py/blob/master/7-edges
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 word = "Holberton"
 word_first_3 = word[:3]
@@ -153,7 +153,7 @@ Complete this [source code](https://github.com/hs-hq/0x00.py/blob/master/8-conca
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 str = "Python is an interpreted, interactive, object-oriented programming\
        language that combines remarkable power with very clear syntax"
@@ -172,7 +172,7 @@ Write a Python script that prints “The Zen of Python”, by TimPeters, followe
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 import this
 ```
