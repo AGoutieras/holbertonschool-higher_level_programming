@@ -55,11 +55,11 @@ Accept: text/html
 
 **Main Components:**
 
-* **Method** -> GET
-* **PATH** -> /index.html
-* **HTTP Version** -> HTTP/1.1
+* **Method** -> `GET`
+* **PATH** -> `/index.html`
+* **HTTP Version** -> `HTTP/1.1`
 * **Headers** -> Additional metadata (browser info, accepted formats, etc.)
-* **Body (optional)** -> Data sent to the server (e.g., from data in POST requests)
+* **Body (optional)** -> Data sent to the server (e.g., from data in `POST` requests)
 
 ### HTTP Response Structure
 
