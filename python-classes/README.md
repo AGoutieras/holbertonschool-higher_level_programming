@@ -12,7 +12,7 @@ Write an empty class ```Square``` that defines a square:
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines a square."""
 
@@ -36,7 +36,7 @@ Write a class ```Square``` that defines a square by: (based on ```0-square.py```
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines a square."""
 
@@ -70,7 +70,7 @@ Write a class ```Square``` that defines a square by: (based on ```1-square.py```
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines a square."""
 
@@ -115,7 +115,7 @@ Write a class ```Square``` that defines a square by: (based on ```2-square.py```
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines a square."""
 
@@ -166,7 +166,7 @@ Write a class ```Square``` that defines a square by: (based on ```3-square.py```
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines a square."""
 
@@ -261,7 +261,7 @@ Write a class ```Square``` that defines a square by: (based on ```4-square.py```
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines a square."""
 
@@ -374,7 +374,7 @@ Write a class ```Square``` that defines a square by: (based on ```4-square.py```
 <details>
 <summary>Show answer</summary>
 
-```bash
+```python
 #!/usr/bin/python3
 """Defines a square."""
 
