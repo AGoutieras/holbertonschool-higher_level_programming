@@ -10,7 +10,13 @@ class SimpleHandler(http.server.BaseHTTPRequestHandler):
     
     def do_GET(self):
         """Handles GET requests"""
-        if self.path == "/data":
+        if self.path == "/":
+            self.send_response(200)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            self.wfile.write(b"Hello, this is a simple API!")
+            
+        elif self.path == "/data":
             self.send_response(200)
             self.send_header('Content-type', 'application/json')
             self.end_headers()
@@ -22,12 +28,6 @@ class SimpleHandler(http.server.BaseHTTPRequestHandler):
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
             self.wfile.write(b"OK")
-
-        elif self.path == "/":
-            self.send_response(200)
-            self.send_header('Content-type', 'text/plain')
-            self.end_headers()
-            self.wfile.write(b"Hello, this is a simple API!")
 
         elif self.path == '/info':
             self.send_response(200)
@@ -42,11 +42,11 @@ class SimpleHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(404)
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
-            self.wfile.write(b"404 Not Found.")
+            self.wfile.write(b"Endpoint not found")
 
 if __name__ == "__main__":
     PORT = 8000
     server_address = ('', PORT)
     server = HTTPServer(server_address, SimpleHandler)
-    print(f"Server successfully started!")
+    print(f"Server running on port {PORT}")
     server.serve_forever()
