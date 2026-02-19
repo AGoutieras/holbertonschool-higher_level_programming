@@ -3,6 +3,15 @@
 
 # Differences between HTTP and HTTPS
 
+# Table of contents
+* [HTTP (HyperText Transfer Protocol)](#http-hypertext-transfer-protocol)
+* [HTTPS (HyperText Transfer Protocol Secure](#https-hypertext-transfer-protocol-secure)
+* [Structure of an HTTP Request and Response](#structure-of-an-http-request-and-response)
+* [Observing Traffic with Wireshark](#observing-traffic-with-wireshark)
+* [Common HTTP Methods](#common-http-methods)
+* [Common HTTP Status Codes](#common-http-status-codes)
+
+
 ### HTTP (HyperText Transfer Protocol)
 
 HTTP is the Protocol used to transfer data between a web browser and a web server.
@@ -157,14 +166,6 @@ Resource does not exist.
 Server-side issue.
 
 ![HTTP Status Code Groups](https://miro.medium.com/v2/resize:fit:720/format:webp/1*w_iicbG7L3xEQTArjHUS6g.jpeg)
-
-# Summary
-* HTTP = No encryption
-* HTTPS = Encrypted by TLS
-* Methods define actions
-* Status codes define outcomes
-* DevTools allows inspection
-* Wireshark shows traffic differences
 
 # ✅ Conclusion
 Understanding HTTP and HTTPS is fundamental for:
