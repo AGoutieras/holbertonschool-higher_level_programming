@@ -123,7 +123,7 @@ At the end of this exercise, students should be able to:
 
 3. When checking the path of the request, the `path` attribute of the request handler (`self.path`) can be used to route requests to different endpoints.
 
-## Expected Output:
+### Expected Output:
 
 1. On visiting `http://localhost:8000`, you should see the text: "Hello, this is a simple API!".
 
