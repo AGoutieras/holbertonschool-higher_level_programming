@@ -3,23 +3,23 @@
 
 # RESTful API
 
-# [2. Consuming and processing data from an API using Python](task_02_requests.py)
+## [2. Consuming and processing data from an API using Python](task_02_requests.py)
 
-## Background:
+### Background:
 Python, due to its readability and a vast library ecosystem, is a popular choice for interacting with web services and APIs. The `requests` library simplifies HTTP communication and allows users to send HTTP requests using Python. Once the data is fetched, Python's built-in libraries and tools enable effortless data manipulation and processing.
 
-## Objective:
+### Objective:
 At the end of this exercise, students should be able to:
   1. Utilize the `requests` library to send HTTP requests and process responses.
   2. Parse and manipulate JSON data using Python.
   3. Convert structured data into other formats, e.g., CSV.
 
-## Resources:
+### Resources:
   1. [Python Requests Library](https://docs.python-requests.org/en/latest/)
   2. [Working with JSON data in Python](https://realpython.com/python-json/)
   3. Public API to experiment with: [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
 
-## Instructions:
+### Instructions:
   1. If not installed, install the `requests` library using pip: `pip install requests`.
 
   2. Write a basic Python script to fetch posts from JSONPlaceholder using requests.get().
@@ -81,23 +81,23 @@ def fetch_and_save_posts():
 
 ---
 
-# [3. Develop a simple API using Python with the `http.server` module](task_03_http_server.py)
+## [3. Develop a simple API using Python with the `http.server` module](task_03_http_server.py)
 
-## Background:
+### Background:
 The `http.server` module in Python's standard library provides basic classes for implementing web servers. While it's not typically used for production applications, it's a handy tool for building simple web servers and understanding the basics of web programming without relying on third-party libraries.
 
-## Objective:
+### Objective:
 At the end of this exercise, students should be able to:
 
   1. Set up a basic web server using the `http.server` module.
   2. Handle different types of HTTP requests (GET, POST, etc.).
   3. Serve JSON data in response to specific endpoints.
 
-## Resources:
+### Resources:
   1. [Python docs: http.server — HTTP servers](https://docs.python.org/3/library/http.server.html)
   2. [A simple example of using Python's http.server](https://www.afternerd.com/blog/python-http-server/)
 
-## Instructions:
+### Instructions:
 1. **Setting Up a Basic HTTP Server:**
 
     * Use the `http.server` module to set up a simple HTTP server. Start by creating a subclass of `http.server.BaseHTTPRequestHandler`.
@@ -115,7 +115,7 @@ At the end of this exercise, students should be able to:
     * Add an /status endpoint to check the API status. It shoud return OK.
     * Implement error handling. If the user tries to access an undefined endpoint, return a 404 Not Found status with an appropriate message.
   
-## Hints:
+### Hints:
 
 1. When sending headers using `http.server`, the `send_response` method is handy. You can also use `send_header` to specify specific headers, and don't forget to end headers with `end_headers`.
 
@@ -195,12 +195,12 @@ if __name__ == "__main__":
 ---
 
 
-# [4. Develop a Simple API using Python with Flask](task_04_flask.py)
+## [4. Develop a Simple API using Python with Flask](task_04_flask.py)
 
-## Background:
+### Background:
 Flask is a lightweight web framework for Python, which is especially popular for creating small to medium web applications and RESTful APIs. Its minimalist and modular approach makes it a great choice for beginners to delve into web development without the overhead of more complex frameworks.
 
-## Objective:
+### Objective:
 At the end of this exercise, students should be able to:
 
   1. Set up a Flask application and run a development server.
@@ -209,10 +209,10 @@ At the end of this exercise, students should be able to:
   4. Understand the basics of request handling and response formation in Flask.
   5. Handle POST requests to add new data to the API.
 
-## Resources:
+### Resources:
   * [Flask Official Documentation](https://flask.palletsprojects.com/en/stable/) Start with the Quickstart section: "A Minimal Application" to get an overall idea on how the framework works.
 
-## Instructions:
+### Instructions:
   1. **Setting Up Flask**:
       * Install Flask using pip: `pip install Flask`.
       * Create a new Python file and import Flask: `from flask import Flask`.
@@ -253,7 +253,7 @@ At the end of this exercise, students should be able to:
         
         6 If `username` already exists, return **409** with `{"error":"Username already exists"}`.
 
-## Test your code:
+### Test your code:
 Test your application using the `flask` CLI to run the development server.
 
 ```bash
@@ -267,13 +267,13 @@ Press CTRL+C to quit
 
 > Use `curl` or a `python` script to test your API.
 
-## Hints:
+### Hints:
   1. Flask routes are defined using the `@app.route()` decorator, followed by a function that returns the desired response for that route.
   2. For serving dynamic content in routes, Flask allows you to add variables to the route (e.g., `<variable_name>`). These can be captured in your function parameters.
   3. The `jsonify()` function in Flask turns a Python dictionary or list into a response with `application/json` content-type.
   4. Flask's development server reloads automatically on code changes. However, for certain types of changes (like adding new files), you might need to restart the server.
 
-## Expected Output:
+### Expected Output:
   * Accessing `http://localhost:5000` should show the message: `"Welcome to the Flask API!"`.
   * Visiting `http://localhost:5000/data` should return a JSON response with a list of all usernames stored in the API. For example, if the `users` dictionary contains `{"jane": {"username": "jane", "name":     "Jane", "age": 28, "city": "Los Angeles"}, "john": {"username": "john", "name": "John", "age": 30, "city": "New York"}}`, the response should be:
   ```json
@@ -410,12 +410,12 @@ if __name__ == "__main__":
 ---
 
 
-# [5. API Security and Authentication Techniques](task_05_basic_security.py)
+## [5. API Security and Authentication Techniques](task_05_basic_security.py)
 
-## Background
+### Background
 API security is of paramount importance, especially when the API is exposed to the wider internet. There are many risks, including unauthorized data access, data tampering, and denial-of-service attacks. One fundamental method of securing APIs is to use authentication and authorization mechanisms, ensuring only authorized users can access certain resources.
 
-## Objective
+### Objective
 At the end of this exercise, students should be able to:
 
   1. Understand the importance of API security.
@@ -423,12 +423,12 @@ At the end of this exercise, students should be able to:
   3. Set up token-based authentication with JSON Web Tokens (JWT).
   4. Differentiate between authentication and authorization.
 
-## Resources:
+### Resources:
   1. [Flask-HTTPAuth](https://flask-httpauth.readthedocs.io/en/latest/)
   2. [Flask-JWT-Extended](https://flask-jwt-extended.readthedocs.io/en/stable/)
   3. [Introduction to JSON Web Tokens](https://www.jwt.io/introduction#what-is-json-web-token)
 
-## Instructions:
+### Instructions:
 Basic Authentication:
 
   1. **Install Flask-HTTPAuth:**
@@ -463,7 +463,7 @@ Hints:
   * Use a strong secret key for JWT token generation and validation.
   * Utilize `get_jwt_identity()` to retrieve user information from the current JWT token.
 
-## API Specifications:
+### API Specifications:
 User Data:
   * Users should be stored in memory using a dictionary with the following structure:
 ```python
@@ -523,10 +523,10 @@ Expected Output:
   6. Accessing `/admin-only` with a non-admin token should return a `403 Forbidden` response `{"error": "Admin access required"}`.
   7. Accessing `/admin-only` with an admin token should return `"Admin Access: Granted"`.
 
-## Important Note:
+### Important Note:
 When implementing authentication in your Flask API, ensure that all authentication errors return a `401 Unauthorized response`. This includes errors due to missing, invalid, expired, or malformed tokens. Returning a consistent `401` status code for authentication errors is crucial for passing the automated tests. Failure to return a `401` status code for these errors may result in failing tests.
 
-## Hints:
+### Hints:
   * **Custom Error Handlers**: Use `Flask-JWT-Extended`'s decorators to create custom error handlers for different types of JWT errors.
 
 Here are some examples:
