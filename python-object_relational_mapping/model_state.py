@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+Contains the class definition of a State
 """
 
 from sqlalchemy import Column, Integer, String
@@ -9,6 +10,9 @@ Base = declarative_base()
 
 
 class State(Base):
+    """
+    Class with state id and name
+    """
     __tablename__ = 'states'
 
     id = Column(Integer, primary_key=True, nullable=False)
