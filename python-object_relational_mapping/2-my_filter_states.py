@@ -13,5 +13,5 @@ if __name__ == "__main__":
     cursor.execute("SELECT * FROM states "
                    "WHERE BINARY name = '{}' "
                    "ORDER BY id".format(sys.argv[4]))
-    
+
     [print(state) for state in cursor.fetchall()]
