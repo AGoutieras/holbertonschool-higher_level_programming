@@ -15,5 +15,6 @@ if __name__ == "__main__":
                    "ON cities.state_id = states.id "
                    "WHERE states.name = %s "
                    "ORDER BY cities.id ", (sys.argv[4],))
+    states = cursor.fetchall()
 
-    [print(state) for state in cursor.fetchall()]
+    print(", ".join([state[1] for state in states]))
