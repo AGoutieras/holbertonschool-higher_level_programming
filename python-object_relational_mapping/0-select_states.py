@@ -12,7 +12,5 @@ if __name__ == "__main__":
     db = MySQLdb.connect(user=username, passwd=password, db=database)
     cursor = db.cursor()
     cursor.execute("SELECT * FROM states")
-    rows = cursor.fetchall()
 
-    for state in rows:
-        print(state)
+    [print(state) for state in cursor.fetchall()]
