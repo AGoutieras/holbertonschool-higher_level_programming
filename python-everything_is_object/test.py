@@ -1,3 +1,3 @@
-s1 = "Best School"
-s2 = "Best School"
-print(s1 is s2)
+l1 = [1, 2, 3]
+l2 = [1, 2, 3] 
+print(l1 == l2)
